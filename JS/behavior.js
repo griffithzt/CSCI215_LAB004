@@ -2,20 +2,18 @@
 
 // -----------------------------------
 // Global Variables Go Here
-
-//Var I = [ <a href=#><img src = "http://munsellb.people.cofc.edu/img/pound.jpeg"></a>,
-              //<a href=#><img src = "http://munsellb.people.cofc.edu/img/euro.jpeg"></a>,
-              // <a href=#><img src = "http://munsellb.people.cofc.edu/img/kroon.jpeg"></a>,
-              // <a href=#><img src = "http://munsellb.people.cofc.edu/img/canadian.jpeg"></a>,
-              // <a href=#><img src = "http://munsellb.people.cofc.edu/img/yuan.jpeg"></a>
-              //];
+var dollar;
+var selectElement;
+var exchangeRate;
+var index;
+var currency;
 			  
-Var I = imageArray[];
-imageArray[0] = http://munsellb.people.cofc.edu/img/pound.jpeg;
-imageArray[1] = http://munsellb.people.cofc.edu/img/euro.jpeg;
-imageArray[2] = http://munsellb.people.cofc.edu/img/kroon.jpeg;
-imageArray[3] = http://munsellb.people.cofc.edu/img/canadian.jpeg;
-imageArray[4] = http://munsellb.people.cofc.edu/img/yuan.jpeg;
+var I = []
+I[0] = "http://munsellb.people.cofc.edu/img/pound.jpeg";
+I[1] = "http://munsellb.people.cofc.edu/img/euro.jpeg";
+I[2] = "http://munsellb.people.cofc.edu/img/kroon.jpeg";
+I[3] = "http://munsellb.people.cofc.edu/img/canadian.jpeg";
+I[4] = "http://munsellb.people.cofc.edu/img/yuan.jpeg";
 
 // -----------------------------------
 // Convert Function Goes Here
@@ -28,15 +26,15 @@ function convert() {
               var currency = selectElement.options[index].txt;
 			}
 	//Call function	updateExchange
-console.out(updateExchange(dollar,exchangeRate,currency,index));
+updateExchange.call(dollar,exchangeRate,currency,index);
 
 
 // -----------------------------------
 // Calculate Function Goes Here
 
 function calculate(dollar, exchangeRate) {
-				var calc =dollar*exchangeRate;
-				return calc;
+				calculate =dollar*exchangeRate;
+				return calculate;
 			}
 
 // -----------------------------------
